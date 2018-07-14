@@ -11,4 +11,5 @@ class data(models.Model):
     rating = models.IntegerField(default=0)
     access = models.BooleanField(default=True)
     path = models.CharField(max_length=200)
+    file_name = models.CharField(max_length=100)
     click_count = models.IntegerField(default=0)

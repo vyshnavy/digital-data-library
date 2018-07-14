@@ -6,5 +6,5 @@ from datasets.views import DataSearchList
 from . import views
 
 urlpatterns = [
-    path('', DataSearchList.as_view())
+    path('', DataSearchList.as_view()),
 ]
