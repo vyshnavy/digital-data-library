@@ -6,7 +6,7 @@ from search_views.filters import BaseFilter
 # search by tags
 class DataFilter(BaseFilter):
     search_fields = {
-        'search_text': ['tags'],
+        'search_text': ['tags', 'title'],
     }
 
 # search list view model
@@ -16,3 +16,4 @@ class DataSearchList(SearchListView):
     template_name = "datasets/data_list.html"
     form_class = DataSearchForm
     filter_class = DataFilter
+    ordering = "-rating"
