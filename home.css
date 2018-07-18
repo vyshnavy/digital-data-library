@@ -1,0 +1,23 @@
+#img{
+    opacity: 0px;
+
+}
+#menu{
+    background: linear-gradient(to right,#1874c3 ,#104b7f);
+    color: #B8C3C8;
+}
+#menu-item{
+    margin-top: 5px;
+    font-size: 20px;
+    color: #FFFFFF;
+    border: #B8C3C8
+
+}
+#new-item{
+    background-color: whitesmoke;
+    border-radius: 25px;
+}
+#side-bar{
+    margin-top: 100px;
+    color: rgb(186, 242, 250);
+}

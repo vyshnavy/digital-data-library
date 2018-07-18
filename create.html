@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Home Page</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>  
+    <!--<script src="main.js"></script>-->
+    </script>
+</head>
+<body>
+    <!-- NAV BAR -->
+    <div class="ui secondary menu" id="menu" style="height:100px; margin: 0px;">
+            <a class="active item" id="menu-item" style="margin-left: 30px; margin-top: 30px;" href="home.html">
+              Home
+            </a>
+            <a class="item" id="menu-item" style="margin-left: 30px; margin-top: 30px;">
+              Rated Datasets
+            </a>
+            <a class="item" id="menu-item" style="margin-left: 30px; margin-top: 30px;">
+              Trending
+            </a>
+           <!--  <div class="ui icon input" style="height: 40px; width: 300px; margin: 30px;">
+                    <input type="text" placeholder="Search Sets...">
+                    <i class="search icon"></i>
+                   </div> -->
+            <div class="right menu" style="margin: 20px;  padding-top: 7px; padding-bottom: 7px; padding-right: 45px;">
+                <a href="create.html">
+                    <!--<button class="ui labeled icon green button right floated">
+                            <i class="plus icon"></i>
+                            
+                            Create DataSet
+                            
+                   </button>-->
+                </a>   
+               
+
+                    <button class="ui active button" style="margin:5px">
+                      <i class="user icon"></i>
+                      Sign Out
+                    </button>
+                </div>
+              </div>
+              <div class="ui grid">
+                    <div class="five wide column"></div>
+                    <div class="six wide column">
+                            <div class="container" style="position: absolute; margin-top: 10px; font-size: 20px;">
+                                    <!--<% block content %>-->
+
+
+
+
+                                    <!-- CONTENT CARD START -->
+                                    <div class="ui card fluid">
+                                        <div class="content">
+                                            <div class="header">
+                                                Create DataSet
+                                            </div>
+                                            <div class="meta">
+                                                Tell us something about your dataset :)
+                                            </div>
+                                            <hr>
+                                          </div>
+                                            <div class="content">
+                                           
+
+                                   <!--  <div >
+                                            <h1>Tell us something about your dataset :) </h1>
+                                    </div>
+                                    <hr> -->
+                                    
+                                    <div style="margin-top: 0px">
+                                            <form class="ui form">
+                                                    <div class="two fields">
+                                                    <div class="field">
+                                                      <label>Type of dataset</label>
+                                                      <input name="data-type" placeholder="Eg : text, image, etc" type="text">
+                                                    </div>
+                                                    <div class="field">
+                                                      <label>Categories</label>
+                                                      <input name="category" placeholder="Eg : financial, medical, etc" type="text">
+                                                    </div>
+                                                    </div>
+                                                    
+                                                    <div class="field">
+                                                        <label>Description</label>
+                                                        <textarea></textarea>
+                                                    </div>
+                                                   
+                                                         
+               
+                                                    <!-- <button class="ui success button" type="submit" style="font-size: 20px">Submit</button> -->
+                                                  </form>
+                                    </div>
+                                    <div style="margin-top: 20px">
+                                            <h5>Upload your file here</h5>
+                                    </div>
+                                    <div class="" style="margin-top: 10px;">
+                                    <form method="post" enctype="multipart/form-data">
+                                       <!-- <% csrf_token %>-->
+                                        <input type="file" name="myfile">
+                                        <br>
+                                        <br>
+                                        <button class="ui  green button right floated" style="height: 50px; font-size: 18px" >
+                                          Confirm Submission</button>
+                                      </form>
+                                    
+                                    <!--<% if uploaded_file_url %>
+                                    <p>File uploaded at: <a href="{{ uploaded_file_url }}">{{ uploaded_file_url }}</a></p>
+                                    <% endif %>-->
+            
+                                  
+                                    <!--<% endblock %>-->
+                                    </div>
+
+                                    <!-- <p>This is my content</p> -->
+                                  </div>                                                <!-- CONTENT CARD END -->
+                                  <!-- <div class="content extra">
+                                      <button class="ui button" type="button" name="button">Click content</button>
+                                  </div> -->
+                              
+            
+                          </div>
+
+
+
+
+
+                                </div>
+                
+                    </div>
+                    <div class="four wide column"></div>
+
+                  </div>
+
+                
+</body>
+</html>
