@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home Page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>
+            table {
+                border-collapse: collapse;
+                border: 2px black solid;
+                font: 16px sans-serif;
+                margin-left: 50px;
+            }
+
+            td {
+                border: 1px black solid;
+                padding: 5px;
+            }
+        </style>
+        <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/1.11.8/semantic.min.css"/>  
+        <!--<script src="main.js"></script>-->
+        </script>
+</head>
+<body>
+        <div class="ui secondary  menu" id="menu" style="height: 50px; margin-bottom: 0px;">
+                <a class="active item" id="menu-item" style="margin-left: 30px">
+                  Home
+                </a>
+                <a class="item" id="menu-item">
+                  Rated Datasets
+                </a>
+                <a class="item" id="menu-item">
+                  Trending
+                </a>
+                <div class="right menu" style="margin-left: 35px">
+                  <div class="item" id="menu-item" >
+                    <div class="ui input" id="new-item">
+                      <input placeholder="&nbsp; search" type="text">
+                    </div>
+                  </div>
+                  <a class="ui item"id="menu-item">
+                        Sign Out
+                      </a>
+                    </div>
+                  </div>
+                  <div class="container" style="margin-left: 40px;">
+                  <div class="container" style="margin-top: 40px"><h1>Previewing your dataset.</h1></div>
+                  <div class="ui grid" style="margin-top: 70px;">
+                      <div class="two wide column"></div>
+                      <div class="twelve wide column" style="">
+                          <div class="container">
+                                   <script src="http://d3js.org/d3.v3.min.js"></script> 
+                                 <!--<script src="d3.min.js?v=3.2.8"></script>-->
+
+                          <script type="text/javascript"charset="utf-8">
+                          d3.text("data.csv", function(data) {
+                          var parsedCSV = d3.csv.parseRows(data);
+
+                          var container = d3.select("body")
+                          .append("table")
+
+                          .selectAll("tr")
+                          .data(parsedCSV).enter()
+                          .append("tr")
+
+                          .selectAll("td")
+                          .data(function(d) { return d; }).enter()
+                          .append("td")
+                          .text(function(d) { return d; });
+            });
+        </script>
+                          </div>
+                      </div>
+                      
+                      <div class="two wide column"></div>
+                     
+                    </div>
+
+    </div>
+       
+</body>
+</html>
